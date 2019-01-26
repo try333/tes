@@ -45,15 +45,13 @@ include('header.php');
     <li><a data-toggle="tab" href="#menu2">Organisir File</a></li>
   </ul>
 <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
+    <div id="home" class="tab-pane fade <?php if(isset($_GET['srchpdf']) OR isset($_GET['delpdf']) OR isset($_GET['srchpdf1']) OR isset($_GET['delpdf1']))echo ''; else echo 'in active' ?>">
         <div class="panel panel-default">
                 <div class="panel-body" style="text-align: center;">
                     <h1>Selamat Datang di Dashboard Admin</h1>
     </div>
 </div>
 </div>
-</div>
-<div class="tab-content">
     <div id="menu1" class="tab-pane fade <?php if(isset($_GET['srchpdf1']) OR isset($_GET['delpdf1']))echo ' in active' ?>">
 <div class="panel panel-default">
     <div class="panel-body">
